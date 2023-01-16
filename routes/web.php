@@ -36,4 +36,7 @@ Route::get("/", "HomeController@index")->name("home");
 
 Route::get("/home", "HomeController@index"); // home is used in the default code and in case I forgot to change some, I am sending it to index page here
 
-Route::post("firereport", "FireInputController@index")->withInput();
+Route::post("firereport", "FireInputController@index");
+
+Route::get("product-register", "ProductRegister@index");
+Route::post("product-register", "ProductRegister@Register");

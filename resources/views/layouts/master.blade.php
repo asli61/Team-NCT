@@ -14,12 +14,12 @@
 </head>
 <body>
     <div class = "navbar" id="navbar">
-        <a class= "navbar-link" href="{{route('home')}}">Teammate Finder</a>
+        <a class= "navbar-link" href="{{route('home')}}">Yangın Bilgilendirme</a>
         <a class= "navbar-link" href="{{route('home')}}">template</a>
 
         @guest
-        <a href="{{route('register')}}" class="navbar-link auth-link">Register</a>
-        <a href="{{route('login')}}" class="navbar-link auth-link">Log In</a>
+        <a href="{{route('register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
+        <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
         @endguest
 
         @auth
