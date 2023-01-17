@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('product_infos', function (Blueprint $table) {
             $table->id();
+            $table->index('id');
             $table->string("serial_number");
             $table->string("adress")->nullable();
             $table->timestamps();
