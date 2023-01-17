@@ -8,7 +8,7 @@ class ProductRegister extends Controller
 {
     /*public function index()
     {
-        return view("ProductRegister");
+        return view("productRegister");
     }
 
 
