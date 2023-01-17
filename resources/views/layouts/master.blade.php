@@ -18,7 +18,7 @@
         <a class= "navbar-link" href="{{route('home')}}">template</a>
 
         @guest
-        <a href="{{route('register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
+        <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
         <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
         @endguest
 

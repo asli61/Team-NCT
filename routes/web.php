@@ -38,5 +38,5 @@ Route::get("/home", "HomeController@index"); // home is used in the default code
 
 Route::post("firereport", "FireInputController@index");
 
-Route::get("product-register", "ProductRegister@index");
+Route::get("product-register", "ProductRegister@index")->name("product-register");
 Route::post("product-register", "ProductRegister@Register");
