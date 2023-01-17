@@ -40,5 +40,3 @@ Route::post("yangın-raporu", "FireInputController@index");
 
 Route::get("product-register", "ProductRegister@index")->name("product-register");
 Route::post("product-register", "ProductRegister@Register");
-
-Route::get("")
