@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('FireTable', function (Blueprint $table) {
             $table->id();
-            $table->foreign('id')
+            $table->foreign('product_infos_id_index')
             ->references('id')->on('product_infos')->onDelete('cascade');
             $table->timestamps();
         });
