@@ -9,5 +9,5 @@ class FireTableInput extends Model
 {
     use HasFactory;
 
-    protected $table = "FireTable";
+    protected $table = "fire_data";
 }
