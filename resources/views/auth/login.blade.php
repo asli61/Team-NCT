@@ -1,12 +1,24 @@
+<!-- it should be noted that "loginboxmarin" is just a temporary solution to the boxes not aligning and the whole styling should be transferred to 
+a css file of its own. -->
+<style>
+.loginboxmargin{
+    margin-left: 150px;
+    margin-top: 0px
+}
+</style>
 <div class="container">
     <div class="email-styling">
         <label for="email">{{ __('Email Address') }}</label>
-        <input id="email" type="email" name="email" required autocomplete="email">
+        <div class="loginboxmargin">
+            <input id="email" type="email" name="email" required autocomplete="email">
+        </div>
     </div>
 
     <div class="password-styling">
         <label for="password">{{ __('Password') }}</label>
-        <input id="password" type="password"  name="password" required autocomplete="current-password">
+        <div class="loginboxmargin">
+            <input id="password" type="password"  name="password" required autocomplete="current-password">
+        </div>
     </div>
 
     <div class="remember-styling">
