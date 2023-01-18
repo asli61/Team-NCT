@@ -8,6 +8,7 @@ a css file of its own. -->
 }
 </style>
 <div class="container">
+<form>
     <div class="email-styling">
         <label for="email">{{ __('Email Address') }}</label>
         <div class="loginboxmargin">
@@ -28,10 +29,12 @@ a css file of its own. -->
             {{ __('Remember Me') }}
         </label>
     </div>
+    
 
     <button type="submit" class="login-button">
         {{ __('Login') }}
     </button>
+    
 
     <div class="forgot-password">
         @if (Route::has('password.request'))
@@ -40,4 +43,5 @@ a css file of its own. -->
                                     </a>
         @endif
     </div>
+</form>
 </div>
