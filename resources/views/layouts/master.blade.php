@@ -44,8 +44,8 @@
       
     <div id="content">
         <div>
-            <h2>Collapsed Sidebar</h2>
-            <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+            <h2>ANA SAYFA</h2>
+            <p>burası Team NCT'nin web sitesinin ana sayfası</p>
         </div>
         
         @yield('content')
