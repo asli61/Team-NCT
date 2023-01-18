@@ -4,7 +4,7 @@ a css file of its own. -->
 .container{
     box-sizing: content-box;
     margin-top: 5px;
-    justify-content: center
+    justify-content: center;
 }
 </style>
 <div class="container">
