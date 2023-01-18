@@ -26,13 +26,10 @@ body{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.master-images{
-    height: 100px;
-}
 .fire-ball{
-
+    height: 300px;
 }
 .drone{
-
+    height: 300px;
 }
 
