@@ -10,4 +10,8 @@ class FireTableInput extends Model
     use HasFactory;
 
     protected $table = "FireTable";
+
+    protected $fillable = [
+        'product_id',
+    ];
 }
