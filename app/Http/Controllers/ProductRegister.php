@@ -61,13 +61,13 @@ class ProductRegister extends Controller
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
-            return redirect(back())->with(["error" => true ,
+            return redirect(route("admin-product-register"))->with(["error" => true ,
             "flash" => "Seri numarası ekleme başarılı"]);
         }
 
         else
         {
-            return redirect(back())->with(["error" => true ,
+            return redirect(route("admin-product-register"))->with(["error" => true ,
              "flash" => "Seri numarası zaten var veya seri numarası girilmemiş"]);
         }
 
