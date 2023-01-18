@@ -37,7 +37,7 @@
         <div id ="dashboard-content">
         <a href="{{route("about-us")}}">Hakkımızda</a>
         <a href="{{route("services")}}">sağladığımız servisler</a>
-        <a href="{{route("contact")}}">Bize ulaşın</a>
+        <a href="{{route("contact-us")}}">Bize ulaşın</a>
         </div>
       </div>
       
