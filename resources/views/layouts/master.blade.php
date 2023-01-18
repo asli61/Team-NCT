@@ -11,6 +11,15 @@
     
     @stack('script')
     <title>Teammate Finder | @yield('title', 'Home Page')</title>
+    <style>
+        body{
+            background-image: url("https://do0bihdskp9dy.cloudfront.net/10-07-2022/t_84222e08dddf443ea7dac73519afa5e9_name_CINNABAR_APARTMENT_FIRE_CTSY_PHOENIX_FIRE__4__scaled.jpg");
+        }
+        .content2{
+            background-color: white;
+            height: 1000px;
+        }
+    </style>
 </head>
 <body>
     <div class = "navbar" id="navbar">
@@ -36,18 +45,12 @@
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
         <a href="{{route("about-us")}}">Hakkımızda</a>
-        <a href="{{route("services")}}">sağladığımız servisler</a>
-        <a href="{{route("contact")}}">Bize ulaşın</a>
+        <a href="{{route("services")}}">Sağladığımız servisler</a>
+        <a href="{{route("contact-us")}}">Bize ulaşın</a>
         </div>
       </div>
       
-      
-    <div id="content">
-        <div>
-            <h2>ANA SAYFA</h2>
-            <p>burası Team NCT'nin web sitesinin ana sayfası</p>
-        </div>
-        
+    <div class="content2" id="content">
         @yield('content')
     </div> 
 

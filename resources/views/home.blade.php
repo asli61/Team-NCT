@@ -6,12 +6,8 @@
 
 
 @section('content')
-@auth
-    <div>You are logged in</div>
-@endauth
-
-@guest
-    <div>You are not logged in</div>
-@endguest
-
+    <div>
+    <h2>ANA SAYFA</h2>
+    <p>burası Team NCT'nin web sitesinin ana sayfası</p>
+</div>
 @endsection
