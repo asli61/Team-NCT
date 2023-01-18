@@ -25,6 +25,8 @@ GPS sensörlerinden aldığı veriye göre caddelerin üzerindeki tabelalar saye
 yangın hakkında bilgilendirme yapacak ve olası bir trafik sorununu ortadan kaldıracaktır
     </pre>
 </div>
-<img class="fire-ball" src="{{asset("images/fire-ball-nct.jpeg")}}" alt="ateş topu">
-<img class="drone" src="{{asset("images/drone-nct.jpeg")}}" alt="dron">
+<div class="master-images">
+    <img class="fire-ball" src="{{asset("images/fire-ball-nct.jpeg")}}" alt="ateş topu">
+    <img class="drone" src="{{asset("images/drone-nct.jpeg")}}" alt="dron">
+</div>
 @endsection

@@ -20,20 +20,26 @@
             height: 900px;
         }
         .master{
-            margin-left: auto;
+            
         }
         .master-header{
             font-size: 40px;
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
+            font-weight: 700;
+            margin-left: 400px;
         }
         .master-intro{
             font-size: 30px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: 400px;
         }
         .master-paragraph{
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: 400px;
+        }
+        .master-images{
+            height: 200px;
         }
     </style>
 </head>
