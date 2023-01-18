@@ -21,5 +21,10 @@
             </button>
         </form>
         </div>
+
+@if (session()->get("error"))
+{!!session()->get("flash")!!}
+@endif
+
 </body>
 </html>
