@@ -61,6 +61,7 @@ class ProductRegister extends Controller
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
+            redirect(route("home"));
         }
 
         else
