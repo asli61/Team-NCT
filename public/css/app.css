@@ -28,5 +28,13 @@ body{
 }
 .master-images{
 margin-left: auto;
-height: 350px;
 }
+.fire-ball{
+    height: 350px;
+    justify-content: center;
+}
+.drone .fire-ball{
+    height: 350px;
+    justify-content: center;
+}
+
