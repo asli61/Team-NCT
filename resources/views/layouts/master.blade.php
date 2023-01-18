@@ -25,7 +25,7 @@
         .master-header{
             font-size: 40px;
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
+            font-weight: bold;
             margin-left: 400px;
         }
         .master-intro{
@@ -39,7 +39,13 @@
             margin-left: 400px;
         }
         .master-images{
-            height: 200px;
+            
+        }
+        .fire-ball{
+            height: 150px;
+        }
+        .drone{
+            height: 150px;
         }
     </style>
 </head>
