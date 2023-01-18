@@ -30,13 +30,16 @@ class ProductRegister extends Controller
             $product = ProductInfo::where([
                 "serial_number" => $request["serial_number"]])->first();
 
-            FireTableInput::create([
+            
+            if(!(empty($product["id"]))){
+                FireTableInput::create([
                 'product_id' => $product["id"],
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
             return redirect(route("home"));
         }
+    }
 
         else
         {
