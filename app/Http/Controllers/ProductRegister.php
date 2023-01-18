@@ -32,11 +32,12 @@ class ProductRegister extends Controller
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
+            return redirect(route("home"));
         }
 
         else
         {
-            redirect(route("product-register"))->with(["error" => true ,
+            return redirect(route("product-register"))->with(["error" => true ,
              "flash" => "Seri numarası yok veya adres girilmemiş"]);
         }
     }
