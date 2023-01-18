@@ -27,19 +27,10 @@ class ProductRegister extends Controller
         
         if(!($validator->fails()))
         {
-            $product = ProductInfo::where([
-                "serial_number" => $request["serial_number"]])->first();
-
-            
-            if(!(empty($product["id"]))){
-                FireTableInput::create([
-                'product_id' => $product["id"],
-                'created_at' => now(),
-                'updated_at' => now()
-            ]);
-            return redirect(route("home"));
+            ProductInfo::where(["serial_number" => $request["serial_number"]])
+                ->update(["adress" => $request["adress"]
+                ]);
         }
-    }
 
         else
         {
