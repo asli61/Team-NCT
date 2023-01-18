@@ -73,6 +73,4 @@ class ProductRegister extends Controller
         }
 
     }
-
-
 }
