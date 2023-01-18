@@ -46,7 +46,6 @@
         </div>
       </div>
       
-      
     <div class="content2" id="content">
         @yield('content')
     </div> 
