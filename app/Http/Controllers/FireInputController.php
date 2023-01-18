@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Validator;
 
 class FireInputController extends Controller
 {
-    public function fire_input()
+    public function index()
     {
         $request = request()->all();
 
@@ -23,20 +23,14 @@ class FireInputController extends Controller
                 "serial_number" => $request["serial_number"]])->first();
 
             
-            if(!(empty($product["id"]))){
+            if(!(empty($product["id"])))
+            {
                 FireTableInput::create([
                 'product_id' => $product["id"],
                 'created_at' => now(),
                 'updated_at' => now()
-            ]);
-            return redirect(route("home"));
-        }
-    }
-
-        else
-        {
-            return redirect(route("product-register"))->with(["error" => true ,
-             "flash" => "Seri numarası yok veya adres girilmemiş"]);
+                ]);
+            }
         }
     }
 }
