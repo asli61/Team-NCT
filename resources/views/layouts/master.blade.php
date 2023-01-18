@@ -36,7 +36,7 @@
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
         <a href="{{route("about-us")}}">Hakkımızda</a>
-        <a href="{{route("services")}}">sağladığımız servisler</a>
+        <a href="{{route("services")}}">Sağladığımız servisler</a>
         <a href="{{route("contact-us")}}">Bize ulaşın</a>
         </div>
       </div>
