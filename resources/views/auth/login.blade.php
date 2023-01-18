@@ -2,8 +2,9 @@
 a css file of its own. -->
 <style>
 .loginboxmargin{
-    margin-left: 150px;
-    margin-top: 0px;
+    box-sizing: content-box;
+    margin-left: 120;
+    margin-top: 5px;
 }
 </style>
 <div class="container">
