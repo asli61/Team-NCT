@@ -17,6 +17,7 @@
         }
         .content2{
             background-color: white;
+            height: 1000px;
         }
     </style>
 </head>
