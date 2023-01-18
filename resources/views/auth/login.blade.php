@@ -9,6 +9,7 @@ a css file of its own. -->
 </style>
 <div class="container">
 <form method="post">
+    @csrf
     <div class="email-styling">
         <label for="email">{{ __('Email Address') }}</label>
         <div class="loginboxmargin">
