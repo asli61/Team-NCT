@@ -30,6 +30,8 @@ class ProductRegister extends Controller
             ProductInfo::where(["serial_number" => $request["serial_number"]])
                 ->update(["adress" => $request["adress"]
                 ]);
+                return redirect(route("product-register"))->with(["error" => true ,
+             "flash" => "Ürün kaydı başarılı"]);
         }
 
         else
