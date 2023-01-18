@@ -35,18 +35,17 @@
     <div id="mySidebar" class="sidebar">
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="{{route("about-us")}}">Hakkımızda</a>
+        <a href="{{route("services")}}">sağladığımız servisler</a>
+        <a href="{{route("contact")}}">Bize ulaşın</a>
         </div>
       </div>
       
       
     <div id="content">
         <div>
-            <h2>Collapsed Sidebar</h2>
-            <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+            <h2>ANA SAYFA</h2>
+            <p>burası Team NCT'nin web sitesinin ana sayfası</p>
         </div>
         
         @yield('content')
