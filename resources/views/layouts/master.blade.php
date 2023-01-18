@@ -35,10 +35,9 @@
     <div id="mySidebar" class="sidebar">
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="{{route("about-us")}}">Hakkımızda</a>
+        <a href="{{route("services")}}">sağladığımız servisler</a>
+        <a href="{{route("contact")}}">Bize ulaşın</a>
         </div>
       </div>
       
