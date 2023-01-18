@@ -27,8 +27,11 @@ class ProductRegister extends Controller
         
         if(!($validator->fails()))
         {
+            $product = ProductInfo::where([
+                "serial_number" => $request["serial_number"]])->first();
+
             FireTableInput::create([
-                'product_id' => $request["id"],
+                'product_id' => $product["id"],
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
