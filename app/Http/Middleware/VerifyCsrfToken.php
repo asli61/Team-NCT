@@ -13,6 +13,7 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
-        "http://yangin-bilgi.com/fire-report"
+        "http://yangin-bilgi.com/fire-report",
+        "https://yangin-bilgi.com/fire-report"
     ];
 }
