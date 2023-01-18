@@ -10,14 +10,30 @@
     <script src="{{asset("js/dashboard.js")}}"></script>
     
     @stack('script')
-    <title>Teammate Finder | @yield('title', 'Home Page')</title>
+    <title> Yangin bilgi | @yield('title', 'Home Page')</title>
     <style>
         body{
             background-image: url("https://do0bihdskp9dy.cloudfront.net/10-07-2022/t_84222e08dddf443ea7dac73519afa5e9_name_CINNABAR_APARTMENT_FIRE_CTSY_PHOENIX_FIRE__4__scaled.jpg");
         }
         .content2{
             background-color: white;
-            height: 1000px;
+            height: 900px;
+        }
+        .master{
+            justify-content: center;
+        }
+        .master-header{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .master-intro{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .master-paragraph{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
