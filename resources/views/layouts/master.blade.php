@@ -20,7 +20,7 @@
             height: 900px;
         }
         .master{
-            justify-content: center;
+            margin-left: auto;
         }
         .master-header{
             font-size: 40px;
