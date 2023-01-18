@@ -27,12 +27,11 @@ class ProductRegister extends Controller
         
         if(!($validator->fails()))
         {
-            FireTableInput::create([
-                'product_id' => $request["id"],
-                'created_at' => now(),
-                'updated_at' => now()
-            ]);
-            return redirect(route("home"));
+            ProductInfo::where(["serial_number" => $request["serial_number"]])
+                ->update(["adress" => $request["adress"]
+                ]);
+                return redirect(route("product-register"))->with(["error" => true ,
+             "flash" => "Ürün kaydı başarılı"]);
         }
 
         else
@@ -73,6 +72,4 @@ class ProductRegister extends Controller
         }
 
     }
-
-
 }
