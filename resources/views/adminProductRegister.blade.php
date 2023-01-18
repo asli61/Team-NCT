@@ -7,6 +7,7 @@
     <title>Yeni Ürün Kayıt</title>
 </head>
 <body>
+   <a href="{{route("home")}}">ana sayfa</a>
     <div class="container">
         <form method="post">
             @csrf
