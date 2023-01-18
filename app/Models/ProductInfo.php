@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class ProductInfo extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'serial_number',
+        'adress',
+    ];
 }
