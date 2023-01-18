@@ -15,6 +15,9 @@
         body{
             background-image: url("https://do0bihdskp9dy.cloudfront.net/10-07-2022/t_84222e08dddf443ea7dac73519afa5e9_name_CINNABAR_APARTMENT_FIRE_CTSY_PHOENIX_FIRE__4__scaled.jpg");
         }
+        .content2{
+            background-color: white;
+        }
     </style>
 </head>
 <body>
