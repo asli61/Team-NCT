@@ -27,6 +27,7 @@
         @csrf
         <button class = "navbar-link auth-link" type = "submit">Log Out</button>
         </form>
+        <a href="{{route("")}}">Yönetici Ürün Ekleme</a>
         @endauth
     </div>
 
