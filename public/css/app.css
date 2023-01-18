@@ -9,6 +9,8 @@ body{
 .content2{
     background-color: white;
     height: 900px;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 .master{
     text-align: center;
