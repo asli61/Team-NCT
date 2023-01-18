@@ -18,6 +18,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: auto;
+    margin-right: auto;
 }
 .master-intro{
     font-size: 30px;
@@ -30,12 +31,6 @@ body{
     margin-left: 400px;
 }
 .master-images{
-    
-}
-.fire-ball{
-    height: 150px;
-}
-.drone{
-    height: 150px;
+    height: 500px;
 }
 
