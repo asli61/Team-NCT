@@ -23,8 +23,9 @@
 
 @php
 $product_info = $fire["product_inf"];
-var_dump($fire["product_info"]);
+var_dump($fire["product_inf"]);
 var_dump($product_info);
+var_dump($fire["adress"]);
 @endphp
 
 <div>{{$fire}}</div>
