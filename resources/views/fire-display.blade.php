@@ -24,7 +24,7 @@ $adress_key = 0;
 @endphp
 @foreach ($fires as $fire)
 
-<div>Oluşturulma zamanı: {{$fire["created_at"]->addHours(3)}}| Adres: {{$adress[$adress_key]}}</div>
+<div>Oluşturulma zamanı: {{$fire["created_at"]->addHours(3)}} | Adres: {{$adress[$adress_key]}} | Seri Numarası: {{}}</div>
 @php
 $adress_key += 1;
 @endphp
