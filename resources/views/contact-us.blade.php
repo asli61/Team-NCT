@@ -9,7 +9,8 @@
     <title>bize ulaşın</title>
 </head>
 <body>
-    <a href="{{route("home")}}">ana sayfa</a>
-
+    <div class="home-buttons">
+        <a class="links" href="{{route("home")}}">ana sayfa</a>
+    </div>
 </body>
 </html>
