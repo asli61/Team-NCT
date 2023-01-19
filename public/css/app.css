@@ -57,7 +57,6 @@ justify-content: center;
     margin: 5px;
 }
 .links{
-    margin: 3px;
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -72,18 +71,17 @@ justify-content: center;
     border-color: royalblue;
 }
 .links:hover{
-    margin: 2px;
     display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 30px;
-
+    
     background-color: burlywood;
     width: 135px;
-    height: 37px;
+    height: 35px;
     text-align: center;
     border-style: solid;
-    border-width: 4px;
+    border-width: 5px;
     border-color: royalblue;
 }
 .container-misc{
