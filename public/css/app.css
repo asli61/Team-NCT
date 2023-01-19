@@ -56,13 +56,13 @@ justify-content: center;
     width: 130px;
     height: 35px;
     text-align: center;
+    border-width: 5px;
+    border-color: cadetblue;
 }
 .links{
     text-decoration: none;
     color: darkblue;
     font-size: 30px;
-    border-width: 5px;
-    border-color: cadetblue;
 }
 .container-misc{
     margin: auto;
