@@ -12,6 +12,7 @@
 .firecontainer{
     border-width: 2px;
     border-color: black;
+    border:solid; 
 }
 
 </style>
