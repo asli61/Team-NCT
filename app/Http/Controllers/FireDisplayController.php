@@ -12,7 +12,7 @@ class FireDisplayController extends Controller
     {
         
         $var = ProductInfo::with("product_id");//go on here
-        $fireTable = FireTableInput::orderBy("id","desc")->take(40)->get();
+        $fireTable = FireTableInput::orderBy("id","desc")->take(100)->get();
         $fireArray = [];
 
         foreach($fireTable as $fires)
