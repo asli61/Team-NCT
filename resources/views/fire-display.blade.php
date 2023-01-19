@@ -18,7 +18,7 @@
 
 @foreach ($fires as $fires)
 
-<div class="fire-container">{{$fires}}</div>
+<div class="firecontainer">{{$fires}}</div>
     
 @endforeach
 
