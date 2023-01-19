@@ -78,6 +78,6 @@ justify-content: center;
     background-color: black;
     width: 150px;
     height: 45px;
-    text-align: center;
+    margin: auto;
     background-color: red;
 }
