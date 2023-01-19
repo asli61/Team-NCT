@@ -14,12 +14,7 @@ class FireDisplayController extends Controller
         $data= FireTableInput::select('FireTable.created_at', 'serial_number')
 ->join('product_infos', 'product_id', '=', 'product_infos.id')
 ->get();
-        $var = [];
         $fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
-        foreach($fireTable as $adress)
-        {
-            $var[] = $adress->product_id;
-        }
 
         $fireArray = [];
 
