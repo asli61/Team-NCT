@@ -57,10 +57,10 @@
             </div>
             </form>
             <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
-            @endauth
+            @endauth-->
             <a href="{{route("about-us")}}">Hakkımızda</a>
             <a href="{{route("services")}}">Sağladığımız servisler</a>
-            <a href="{{route("contact-us")}}">Bize ulaşın</a> -->
+            <a href="{{route("contact-us")}}">Bize ulaşın</a> 
         </div>
     </div> 
       
