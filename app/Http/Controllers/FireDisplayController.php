@@ -23,6 +23,7 @@ class FireDisplayController extends Controller
             {
                 $fireArray[] = $fires;
             }
+            $fireArray[] = $fires;
             
         }
 
