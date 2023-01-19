@@ -15,6 +15,7 @@
 
 .content2{
     height: max-content;
+    overflow: scroll;
 }
 
 </style>
