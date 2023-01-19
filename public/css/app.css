@@ -100,12 +100,12 @@ justify-content: center;
 }
 .forgot-password{
     display: inline-block;
-    font-size: 18px;
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif; 
     color: white;
     background-color: black;
     height: 30px;
-    width: 200px;
+    width: 175px;
     text-align: center;
     text-decoration: none;
 }
