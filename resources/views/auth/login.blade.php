@@ -8,7 +8,7 @@
     <title>Yönetici-Giriş</title>
 </head>
 <body>
-    <div>
+    <div class="home-buttons">
         <a href="{{route("home")}}">ana sayfa</a>
     </div>
 <!-- it should be noted that "loginboxmarin" is just a temporary solution to the boxes not aligning and the whole styling should be transferred to 
