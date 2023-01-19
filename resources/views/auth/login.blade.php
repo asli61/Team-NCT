@@ -45,14 +45,14 @@
         
     
         <button type="submit" class="login-button">
-            {{ __('Logi') }}
+            {{ __('Giriş yap') }}
         </button>
         
     
         <div class="forgot-password">
             @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Forgot Your Password?') }}
+                                        <a class="forgot-password btn btn-link" href="{{ route('password.request') }}">
+                                            {{ __('Parolamı unuttum') }}
                                         </a>
             @endif
         </div>
