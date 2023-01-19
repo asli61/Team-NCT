@@ -1,4 +1,4 @@
-<!-- about-us contact-us and services use a diffrnt linking method to go back to the main page because for some damn reason the one with the helper doesnt work -->
+<!-- about-us contact-us and services use a diffrnt linking method to go back to the main page because the one with the helper doesnt work -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
