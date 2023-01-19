@@ -14,7 +14,7 @@
 }
 
 .content2{
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 </style>
