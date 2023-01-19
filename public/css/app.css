@@ -75,7 +75,7 @@ justify-content: center;
     border-color: green;
 }*/
 .links{
-    margin: 0px;
+    margin: 5px;
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -90,6 +90,7 @@ justify-content: center;
     border-color: royalblue;
 }
 .links:hover{
+    margin: 0px;
     display: inline-block;
     text-decoration: none;
     color: white;
