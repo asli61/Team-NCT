@@ -27,7 +27,7 @@ $product_info = $fire["product_info"];
 
 <div>{{$fire}}</div>
 
-<div>Oluşturulma zamanı: {{$fire["created_at"]}}| Adres:  </div>
+<div>Oluşturulma zamanı: {{$fire["created_at"]}}| Adres: {{$product_info}}</div>
     
 @endforeach
 </div>
