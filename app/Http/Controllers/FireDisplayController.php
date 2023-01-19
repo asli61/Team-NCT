@@ -20,15 +20,12 @@ class FireDisplayController extends Controller
         $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
-        $adressArray = [];
 
         foreach($fireTable as $fires)
         {
             if($fires["created_at"] > now()->subHours(2))
             {
-                //$fireArray[] = "product_id" => $fires->productInfo->adress;
                 $fireArray[] = $fires;
-                $adressArray[] = [$fires["id"] => $fires->productInfo->adress];
             }     
 
             else
