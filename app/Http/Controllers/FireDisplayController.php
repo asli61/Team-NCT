@@ -11,19 +11,13 @@ class FireDisplayController extends Controller
 {
     public function index()
     {
-        $fireTable = FireTableInput::select('FireTable.created_at', 'serial_number', "adress")
+        /*$fireTable = FireTableInput::select('FireTable.created_at', 'serial_number', "adress")
 ->join('product_infos', 'product_id', '=', 'product_infos.id')->orderBy("created_at","desc")
 ->take(1000)
-->get();
+->get();*/
         //$fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
 
-        $data = FireTableInput::with("productInfo")->get();
-
-        foreach($data as $var)
-        {
-            echo $var->productInfo->adress;
-            echo $var->productInfo->serial_number;
-        }
+        $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
 
