@@ -11,11 +11,11 @@ class FireDisplayController extends Controller
 {
     public function index()
     {
-        $fireTable = FireTableInput::all();
-        //$fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
-        foreach($fireTable->product_id as $adress)
+        $var = [];
+        $fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
+        foreach($fireTable as $adress)
         {
-            echo $adress->product_id->adress;
+            $var[] = $adress->product_id;
         }
 
         $fireArray = [];
@@ -28,7 +28,7 @@ class FireDisplayController extends Controller
             }
             else
             {
-                return view("fire-display")->with("fires", $fireArray);
+            return view("fire-display")->with("fires", $var/*$fireArray*/);
             }
         }
     }
