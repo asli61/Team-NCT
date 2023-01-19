@@ -17,7 +17,7 @@
             @csrf
             <div class="remember-styling">
                 <input type="text" name="serial_number">
-                <label class="form-check-label" for="product-serial">Yeni Ürün Kayıt Et</label>
+                <label for="product-serial">Yeni Ürün Kayıt Et</label>
             </div>
         
             <button type="submit" class="login-button">
