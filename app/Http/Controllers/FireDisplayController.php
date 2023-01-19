@@ -9,7 +9,7 @@ class FireDisplayController extends Controller
 {
     public function index()
     {
-        $var = FireTableInput::with("product_id");
+        $var = FireTableInput::with("product_id");//go on here
         $fireTable = FireTableInput::orderBy("id","desc")->take(50)->get();
         $fireArray = [];
 
