@@ -35,12 +35,21 @@
     <div id="mySidebar" class="sidebar">
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
+            @auth
+            <form method = "post" action="{{route('logout')}}">
+            @csrf
+            <div class="log-out-button">
+                <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
+            </div>
+            </form>
+            <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
+            @endauth
             <a class= "navbar-link" href="{{route('home')}}">Yangın Bilgilendirme</a>
             @guest
                 <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
                 <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
             @endguest
-            @auth
+           <!-- @auth
             <form method = "post" action="{{route('logout')}}">
             @csrf
             <div class="log-out-button">
@@ -51,7 +60,7 @@
             @endauth
             <a href="{{route("about-us")}}">Hakkımızda</a>
             <a href="{{route("services")}}">Sağladığımız servisler</a>
-            <a href="{{route("contact-us")}}">Bize ulaşın</a>
+            <a href="{{route("contact-us")}}">Bize ulaşın</a> -->
         </div>
     </div> 
       
