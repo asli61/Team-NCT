@@ -23,14 +23,14 @@
     <form method="post">
         @csrf
         <div class="email-styling">
-            <label for="email">{{ __('Email Address') }}</label>
+            <label for="email">{{ __('E-posta adresi') }}</label>
             <div>
                 <input id="email" type="email" name="email" required autocomplete="email">
             </div>
         </div>
     
         <div class="password-styling">
-            <label for="password">{{ __('Password') }}</label>
+            <label for="password">{{ __('parola') }}</label>
             <div>
                 <input id="password" type="password"  name="password" required autocomplete="current-password">
             </div>
@@ -39,13 +39,13 @@
         <div class="remember-styling">
             <input id="remember" type="checkbox" name="remember"  {{ old('remember') ? 'checked' : '' }}>
             <label class="form-check-label" for="remember">
-                {{ __('Remember Me') }}
+                {{ __('Beni hatırla') }}
             </label>
         </div>
         
     
         <button type="submit" class="login-button">
-            {{ __('Login') }}
+            {{ __('Logi') }}
         </button>
         
     

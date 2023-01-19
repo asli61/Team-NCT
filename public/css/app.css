@@ -13,7 +13,7 @@ body{
 }
 .content2{
     background-color: white;
-    height: 900px;
+    height: 850px;
     width: 1100px;
     margin: auto;
    /* margin-right: 300px;
@@ -73,6 +73,7 @@ justify-content: center;
 .container-misc{
     margin: auto;
     width: 200px;
+    color: white;
 }
 .log-out-button{
     width: 180px;
