@@ -20,7 +20,7 @@ a css file of its own. -->
         justify-content: center;
     } 
     </style>
-<div class="container-login">
+<div class="container-misc">
     <div class="container">
     <form method="post">
         @csrf
