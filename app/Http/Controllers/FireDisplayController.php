@@ -17,6 +17,14 @@ class FireDisplayController extends Controller
 ->get();
         //$fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
 
+        $data = FireTableInput::with("productInfo")->get();
+
+        foreach($data as $var)
+        {
+            echo $var->productInfo->adress;
+            echo $var->productInfo->serial_number;
+        }
+
         $fireArray = [];
 
         foreach($fireTable as $fires)

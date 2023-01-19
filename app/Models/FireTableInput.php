@@ -15,8 +15,8 @@ class FireTableInput extends Model
         'product_id',
     ];
 
-    public function productToId()
+    public function productInfo()
     {
-        return $this->belongsTo("ProductInfo", "id");
+        return $this->hasOne("ProductInfo", "product_id", "id");
     }
 }
