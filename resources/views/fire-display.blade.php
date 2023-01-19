@@ -22,10 +22,11 @@
 @foreach ($fires as $fire)
 
 @php
-$product_info = $fire["product_info"]["adress"];
+$product_info = $fire["product_info"];
 var_dump($fire["product_info"]);
 var_dump($product_info);
 var_dump($fire["adress"]);
+var_dump($adress);
 @endphp
 
 <div>{{$fire}}</div>
