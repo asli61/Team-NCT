@@ -21,6 +21,7 @@ a css file of its own. -->
     } 
     </style>
 <div class="container-login">
+    <div class="container-login-inside">
     <div class="container">
     <form method="post">
         @csrf
@@ -60,6 +61,7 @@ a css file of its own. -->
         </div>
     </form>
     </div>
+</div>
 </div>
 </body>
 </html>

@@ -61,6 +61,10 @@ justify-content: center;
     text-decoration: none;
     font-size: 30px;
 }
+.container-login-inside
+{
+    justify-content: center;
+}
 .container-login{
-    margin-right: 50%;
+    width: 100%;
 }
