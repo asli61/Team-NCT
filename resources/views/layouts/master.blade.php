@@ -39,6 +39,13 @@
             <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
             <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
         @endguest
+        @auth
+        <form method = "post" action="{{route('logout')}}">
+        @csrf
+        <button class = "navbar-link auth-link" type = "submit">Log Out</button>
+        </form>
+        <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
+        @endauth
         <a href="{{route("about-us")}}">Hakkımızda</a>
         <a href="{{route("services")}}">Sağladığımız servisler</a>
         <a href="{{route("contact-us")}}">Bize ulaşın</a>
