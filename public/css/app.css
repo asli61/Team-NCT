@@ -67,8 +67,8 @@ justify-content: center;
 }
 .home-buttons:hover{
     background-color: darkblue;
-    width: 160px;
-    height: 45px;
+    width: 150px;
+    height: 42px;
     text-align: center;
     border-style: dashed;
     border-width: 5px;
@@ -81,8 +81,8 @@ justify-content: center;
 }
 .links:hover{
     text-decoration: none;
-    color: aqua;
-    font-size: 40px;
+    color: white;
+    font-size: 35px;
 }
 .container-misc{
     margin: auto;
