@@ -39,7 +39,7 @@
         <a href="{{route("services")}}">Sağladığımız servisler</a>
         <a href="{{route("contact-us")}}">Bize ulaşın</a>
         </div>
-      </div>
+      </div> <!-- it this closing div a stray? -->
       
     <div class="content2" id="content">
         @yield('content')
