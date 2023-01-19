@@ -65,10 +65,24 @@ justify-content: center;
     border-width: 3px;
     border-color: royalblue;
 }
+.home-buttons:hover{
+    background-color: darkblue;
+    width: 160px;
+    height: 45px;
+    text-align: center;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: green;
+}
 .links{
     text-decoration: none;
     color: black;
     font-size: 30px;
+}
+.links:hover{
+    text-decoration: none;
+    color: aqua;
+    font-size: 40px;
 }
 .container-misc{
     margin: auto;
