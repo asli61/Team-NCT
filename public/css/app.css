@@ -64,7 +64,9 @@ justify-content: center;
 .container-login-inside
 {
     /* justify-content: center; */
+
 }
 .container-login{
-    margin-left: 600px;
+    width: 300px;
+    margin: auto;
 }
