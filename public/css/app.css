@@ -57,11 +57,11 @@ justify-content: center;
     margin: 5px;
 }
 .home-buttons{
-    background-color: gray;
+    background-color: burlywood;
     width: 130px;
     height: 35px;
     text-align: center;
-    border-style: double;
+    border-style: solid;
     border-width: 3px;
     border-color: royalblue;
 }
