@@ -42,12 +42,12 @@ display: flex;
 justify-content: center;
 }
 .fire-ball{
-    height: 350px;
+    height: 370px;
     justify-content: center;
     margin: 5px;
 }
 .drone{
-    height: 350px;
+    height: 370px;
     justify-content: center;
     margin: 5px;
 }
