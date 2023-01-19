@@ -15,7 +15,7 @@ class FireDisplayController extends Controller
         $adress_var = FireTableInput::all();//go on here
         foreach($adress_var as $adress)
         {
-            echo $adress->product_id->adress;
+            echo $adress->producToId->adress;
         }
 
         $fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();
