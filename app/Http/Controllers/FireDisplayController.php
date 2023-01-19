@@ -11,8 +11,8 @@ class FireDisplayController extends Controller
 {
     public function index()
     {
-        $fireTable = FireTableInput::all();
-        //$fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
+        //$fireTable = FireTableInput::all();
+        $fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
         foreach($fireTable->product_id as $adress)
         {
             echo $adress->product_id->adress;
