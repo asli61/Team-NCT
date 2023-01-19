@@ -23,7 +23,7 @@
     <form method="post">
         @csrf
         <div class="email-styling">
-            <label for="email">{{ __('Email Address') }}</label>
+            <label for="email">{{ __('Email Addres') }}</label>
             <div>
                 <input id="email" type="email" name="email" required autocomplete="email">
             </div>
