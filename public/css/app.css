@@ -111,7 +111,6 @@ justify-content: center;
     border-color: dodgerblue;
     text-align: center;
     text-decoration: none;
-    box-sizing: border-box;
 }
 .title-product-register{
     font-size: 35px;
