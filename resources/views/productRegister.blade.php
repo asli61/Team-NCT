@@ -11,6 +11,7 @@
     <div class="home-buttons">
         <a class="links" href="{{route("home")}}">ana sayfa</a>
     </div>
+    <div class="container-misc">
     <div>Ürün kayıt et</div> 
 
     <form method="post">
@@ -25,5 +26,6 @@
     {{session()->get("flash")}}
         
     @endif
+</div>
 </body>
 </html>
