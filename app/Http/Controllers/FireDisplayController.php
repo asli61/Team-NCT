@@ -11,7 +11,7 @@ class FireDisplayController extends Controller
 {
     public function index()
     {
-        $data= FireTableInput::select('created_at', 'serial_number')
+        $data= FireTableInput::select('FireTable.created_at', 'serial_number')
 ->join('product_infos', 'product_id', '=', 'id')
 ->get();
         $var = [];
