@@ -45,7 +45,7 @@
         
     
         <button type="submit" class="login-button">
-            {{ __('Logi') }}
+            {{ __('Giriş yap') }}
         </button>
         
     
