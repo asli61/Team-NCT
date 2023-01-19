@@ -14,11 +14,11 @@
 <!-- it should be noted that "loginboxmarin" is just a temporary solution to the boxes not aligning and the whole styling should be transferred to 
 a css file of its own. -->
 <style>
-    .container{
+    /* .container{
         box-sizing: content-box;
         margin-top: 5px;
         justify-content: center;
-    }
+    } */
     </style>
     <div class="container">
     <form method="post">
