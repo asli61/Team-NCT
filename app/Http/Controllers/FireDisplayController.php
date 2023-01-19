@@ -17,7 +17,7 @@ class FireDisplayController extends Controller
 ->get();*/
         //$fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
 
-        $fireTable = FireTableInput::with("productInfo")->get();
+        $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
 
