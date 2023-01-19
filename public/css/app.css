@@ -105,7 +105,10 @@ justify-content: center;
     color: white;
     background-color: black;
     height: 30px;
-    width: 175px;
+    width: 180px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: dodgerblue;
     text-align: center;
     text-decoration: none;
 }
