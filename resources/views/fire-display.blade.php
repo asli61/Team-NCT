@@ -22,8 +22,8 @@
 @foreach ($fires as $fire)
 
 @php
-$product_info = $fire["product_inf"];
-var_dump($fire["product_inf"]);
+$product_info = $fire["product_info"]["adress"];
+var_dump($fire["product_info"]);
 var_dump($product_info);
 var_dump($fire["adress"]);
 @endphp
