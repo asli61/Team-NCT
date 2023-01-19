@@ -59,9 +59,11 @@ justify-content: center;
 }
 .links{
     text-decoration: none;
+    color: darkblue;
     font-size: 30px;
+    border-width: 5px;
 }
 .container-misc{
     margin: auto;
-    width: 250px;
+    width: 200px;
 }
