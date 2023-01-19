@@ -12,7 +12,7 @@
         <a class="links" href="{{route("home")}}">ana sayfa</a>
     </div>
     <div class="container-misc">
-    <div>Ürün kayıt et</div> 
+    <div class="title-product-register">Ürün kaydı</div> 
 
     <form method="post">
         @csrf
