@@ -25,7 +25,7 @@
         @auth
         <form method = "post" action="{{route('logout')}}">
         @csrf
-        <button class = "navbar-link auth-link" type = "submit">Log Out</button>
+        <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
         </form>
         <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
         @endauth
