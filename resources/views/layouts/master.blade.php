@@ -38,8 +38,12 @@
         <a href="{{route("about-us")}}">Hakkımızda</a>
         <a href="{{route("services")}}">Sağladığımız servisler</a>
         <a href="{{route("contact-us")}}">Bize ulaşın</a>
+        @guest
+        <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
+        <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
+        @endguest
         </div>
-      </div> <!-- it this closing div a stray? -->
+    </div> 
       
     <div class="content2" id="content">
         @yield('content')
