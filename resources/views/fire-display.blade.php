@@ -9,7 +9,7 @@
 
 
 
-@foreach ($fireTable as $fires)
+@foreach ($fireArray as $fires)
 
 {{$fires}}
     
