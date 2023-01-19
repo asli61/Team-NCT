@@ -7,7 +7,7 @@
     <title>hakkımızda</title>
 </head>
 <body>
-<a href="{{route("home")}}">ana sayfa</a>
+<a href="yangin-bilgi.com">ana sayfa</a>
 
 </body>
 </html>
