@@ -14,4 +14,9 @@ class FireTableInput extends Model
     protected $fillable = [
         'product_id',
     ];
+
+    public function productToId()
+    {
+        return $this->belongsTo("ProductInfo", "id");
+    }
 }
