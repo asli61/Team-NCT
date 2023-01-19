@@ -25,14 +25,14 @@ a css file of its own. -->
         @csrf
         <div class="email-styling">
             <label for="email">{{ __('Email Address') }}</label>
-            <div class="loginboxmargin">
+            <div>
                 <input id="email" type="email" name="email" required autocomplete="email">
             </div>
         </div>
     
         <div class="password-styling">
             <label for="password">{{ __('Password') }}</label>
-            <div class="loginboxmargin">
+            <div>
                 <input id="password" type="password"  name="password" required autocomplete="current-password">
             </div>
         </div>
