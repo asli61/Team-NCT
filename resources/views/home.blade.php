@@ -9,7 +9,7 @@
 <div class="master">
     
     <h2 class="master-header">ANA SAYFA</h2>
-    <p class="master-intro">burası Team NCT'nin web sitesinin ana sayfasıdır</p>
+    <p class="master-intro">Burası Team NCT'nin web sitesinin ana sayfasıdır</p>
     
 
     <div class="master-paragraph">
