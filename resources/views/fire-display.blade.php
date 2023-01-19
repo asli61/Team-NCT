@@ -23,6 +23,7 @@
 
 @php
 $product_info = $fire["product_info"];
+var_dump($fire);
 @endphp
 
 <div>{{$fire}}</div>
