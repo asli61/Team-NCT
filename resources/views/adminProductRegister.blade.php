@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{asset("css/app.css")}}">
     <title>Yeni Ürün Kayıt</title>
 </head>
 <body>
-   <a href="{{route("home")}}">ana sayfa</a>
+    <div class="home-buttons">
+        <a class="links" href="{{route("home")}}">ana sayfa</a>
+    </div>
+    <div class="container-misc">
     <div class="container">
         <form method="post">
             @csrf
@@ -25,6 +29,6 @@
 @if (session()->get("error"))
 {!!session()->get("flash")!!}
 @endif
-
+</div>
 </body>
 </html>

@@ -1,9 +1,83 @@
 
-#content{
+/*#content{
     margin-left: 50px;
-}
+}*/
 
+.container{
+    box-sizing: content-box;
+    margin-top: 5px;
+    justify-content: center;
+}
 body{
     background-image: url("https://do0bihdskp9dy.cloudfront.net/10-07-2022/t_84222e08dddf443ea7dac73519afa5e9_name_CINNABAR_APARTMENT_FIRE_CTSY_PHOENIX_FIRE__4__scaled.jpg");
 }
-
+.content2{
+    background-color: white;
+    height: 900px;
+    width: 1100px;
+    margin: auto;
+   /* margin-right: 300px;
+    margin-left: 300px; */
+   /* width: 1100px;
+    justify-content: center; */
+}
+.master{
+    text-align: center;
+}
+.master-header{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.master-intro{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.master-paragraph{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block; 
+    text-align: left;
+}
+.master-images{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.fire-ball{
+    height: 390px;
+    justify-content: center;
+    margin: 5px;
+}
+.drone{
+    height: 390px;
+    justify-content: center;
+    margin: 5px;
+}
+.home-buttons{
+    background-color: gray;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: royalblue;
+}
+.links{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+}
+.container-misc{
+    margin: auto;
+    width: 200px;
+}
+.log-out-button{
+    width: 180px;
+    height: 25px;
+    margin-top: 2px;
+    text-align: center;
+    background-color: black;
+}

@@ -10,16 +10,7 @@
     <script src="{{asset("js/dashboard.js")}}"></script>
     
     @stack('script')
-    <title>Teammate Finder | @yield('title', 'Home Page')</title>
-    <style>
-        body{
-            background-image: url("https://do0bihdskp9dy.cloudfront.net/10-07-2022/t_84222e08dddf443ea7dac73519afa5e9_name_CINNABAR_APARTMENT_FIRE_CTSY_PHOENIX_FIRE__4__scaled.jpg");
-        }
-        .content2{
-            background-color: white;
-            height: 1000px;
-        }
-    </style>
+    <title> Yangin bilgi | @yield('title', 'Home Page')</title>
 </head>
 <body>
     <div class = "navbar" id="navbar">
@@ -34,7 +25,7 @@
         @auth
         <form method = "post" action="{{route('logout')}}">
         @csrf
-        <button class = "navbar-link auth-link" type = "submit">Log Out</button>
+        <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
         </form>
         <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
         @endauth
@@ -44,11 +35,34 @@
     <div id="mySidebar" class="sidebar">
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
-        <a href="{{route("about-us")}}">Hakkımızda</a>
-        <a href="{{route("services")}}">Sağladığımız servisler</a>
-        <a href="{{route("contact-us")}}">Bize ulaşın</a>
+            @auth
+            <form method = "post" action="{{route('logout')}}">
+            @csrf
+            <div class="log-out-button">
+                <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
+            </div>
+            </form>
+            <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
+            @endauth
+            <a class= "navbar-link" href="{{route('home')}}">Yangın Bilgilendirme</a>
+            @guest
+                <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
+                <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
+            @endguest
+           <!-- @auth
+            <form method = "post" action="{{route('logout')}}">
+            @csrf
+            <div class="log-out-button">
+                <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
+            </div>
+            </form>
+            <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
+            @endauth-->
+            <a href="{{route("about-us")}}">Hakkımızda</a>
+            <a href="{{route("services")}}">Sağladığımız servisler</a>
+            <a href="{{route("contact-us")}}">Bize ulaşın</a> 
         </div>
-      </div>
+    </div> 
       
     <div class="content2" id="content">
         @yield('content')

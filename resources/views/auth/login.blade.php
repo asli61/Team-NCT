@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{asset("css/app.css")}}">
     <title>Yönetici-Giriş</title>
 </head>
 <body>
-    <a href="{{route("home")}}">ana sayfa</a>
-<!-- it should be noted that "loginboxmarin" is just a temporary solution to the boxes not aligning and the whole styling should be transferred to 
-a css file of its own. -->
+    <div class="home-buttons">
+        <a class="links" href="{{route("home")}}">ana sayfa</a>
+    </div>
 <style>
-    .container{
+    /* .container{
         box-sizing: content-box;
         margin-top: 5px;
         justify-content: center;
-    }
+    } */
     </style>
+<div class="container-misc">
     <div class="container">
     <form method="post">
         @csrf
         <div class="email-styling">
             <label for="email">{{ __('Email Address') }}</label>
-            <div class="loginboxmargin">
+            <div>
                 <input id="email" type="email" name="email" required autocomplete="email">
             </div>
         </div>
     
         <div class="password-styling">
             <label for="password">{{ __('Password') }}</label>
-            <div class="loginboxmargin">
+            <div>
                 <input id="password" type="password"  name="password" required autocomplete="current-password">
             </div>
         </div>
@@ -56,6 +58,7 @@ a css file of its own. -->
         </div>
     </form>
     </div>
+</div>
 </body>
 </html>
 
