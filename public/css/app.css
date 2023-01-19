@@ -9,8 +9,9 @@ body{
 .content2{
     background-color: white;
     height: 900px;
-    margin-right: 300px;
-    margin-left: 300px;
+   /* margin-right: 300px;
+    margin-left: 300px; */
+    width: 800px;
 }
 .master{
     text-align: center;
