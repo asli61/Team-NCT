@@ -77,5 +77,6 @@ justify-content: center;
 .log-out-button{
     background-color: brown;
     width: 100px;
-    height: 35px;
+    height: 45px;
+    font-size: 40px;
 }
