@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="home-buttons">
-        <a href="{{route("home")}}">ana sayfa</a>
+        <a class="links" href="{{route("home")}}">ana sayfa</a>
     </div>
     <div class="container">
         <form method="post">
