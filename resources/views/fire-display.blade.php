@@ -21,7 +21,7 @@
 <div class="firecontainer">
 @foreach ($fires as $fire)
 
-<div>{{"Oluşturulma zamanı:"$fire["created-at"]}}</div>
+<div>{{"Oluşturulma zamanı:" + $fire["created-at"]}}</div>
     
 @endforeach
 </div>
