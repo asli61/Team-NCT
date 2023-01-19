@@ -62,6 +62,7 @@ justify-content: center;
     color: darkblue;
     font-size: 30px;
     border-width: 5px;
+    border-color: cadetblue;
 }
 .container-misc{
     margin: auto;
