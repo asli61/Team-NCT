@@ -19,20 +19,19 @@
 
 </style>
 <div class="firecontainer">
+@php
+$adress_key = 0;
+@endphp
 @foreach ($fires as $fire)
 
-@php
-$product_info = $fire["product_info"];
-var_dump($fire["product_info"]);
-var_dump($product_info);
-var_dump($fire["adress"]);
-var_dump($adress);
-@endphp
+
 
 <div>{{$fire}}</div>
 
-<div>Oluşturulma zamanı: {{$fire["created_at"]}}| Adres: {{$product_info}}</div>
-    
+<div>Oluşturulma zamanı: {{$fire["created_at"]}}| Adres: {{$adress[$adress_key]}}</div>
+@php
+$adress_key += 1;
+@endphp
 @endforeach
 </div>
 
