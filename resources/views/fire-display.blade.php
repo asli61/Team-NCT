@@ -14,7 +14,7 @@
 }
 
 .content2{
-    height: ;
+    height: max-content;
 }
 
 </style>
