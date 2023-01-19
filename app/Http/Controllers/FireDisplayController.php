@@ -20,6 +20,7 @@ class FireDisplayController extends Controller
         $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
+        $adressArray = [];
 
         foreach($fireTable as $fires)
         {
@@ -27,7 +28,7 @@ class FireDisplayController extends Controller
             {
                 //$fireArray[] = "product_id" => $fires->productInfo->adress;
                 $fireArray[] = $fires;
-                $fireArray[] = ["product_id" => $fires->productInfo->adress];
+                $adressArray[] = [$fires["id"] => $fires->productInfo->adress];
             }     
 
             else
