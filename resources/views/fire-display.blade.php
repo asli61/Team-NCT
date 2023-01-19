@@ -20,8 +20,10 @@
 </style>
 <div class="firecontainer">
 @foreach ($fires as $fire)
+$product_info = fire["product_info"];
 <div>{{$fire}}</div>
-<div>Oluşturulma zamanı: {{$fire["created_at"]}}</div>
+
+<div>Oluşturulma zamanı: {{$fire["created_at"]}}| </div>
     
 @endforeach
 </div>
