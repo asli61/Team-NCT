@@ -76,9 +76,9 @@ justify-content: center;
 }
 .log-out-button{
     background-color: black;
-    width: 150px;
+    width: 180px;
     height: 30px;
-    margin-top: auto;
+    margin-top: 15px;
     text-align: center;
     background-color: red;
 }
