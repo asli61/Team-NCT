@@ -8,7 +8,7 @@
 @section('content')
 <div class="master">
     
-    <h2 class="master-header">ANA SAYFA</h2>
+    <h2 class="master-header">Team NCT</h2>
     <p class="master-intro">Burası Team NCT'nin web sitesinin ana sayfasıdır</p>
     
 
