@@ -21,7 +21,7 @@ class FireDisplayController extends Controller
 
         foreach($fireTable as $fires)
         {
-            if($fires["created_at"] > now()->subHours(2))
+            if($fires["created_at"] > now()->subHours(20))
             {
                 $fireArray[] = $fires;
             }     
