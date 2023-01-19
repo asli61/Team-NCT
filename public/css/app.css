@@ -11,11 +11,13 @@ body{
     height: 900px;
    /* margin-right: 300px;
     margin-left: 300px; */
-    width: 1100px;
-    justify-content: center;
+   /* width: 1100px;
+    justify-content: center; */
 }
 .master{
     text-align: center;
+    margin: auto;
+
 }
 .master-header{
     font-size: 40px;
