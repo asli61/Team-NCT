@@ -11,13 +11,7 @@
     <div class="home-buttons">
         <a class="links" href="{{route("home")}}">ana sayfa</a>
     </div>
-<style>
-    /* .container{
-        box-sizing: content-box;
-        margin-top: 5px;
-        justify-content: center;
-    } */
-    </style>
+
 <div class="container-misc">
     <div class="container">
     <form method="post">
