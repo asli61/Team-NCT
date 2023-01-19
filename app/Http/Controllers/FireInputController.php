@@ -33,9 +33,4 @@ class FireInputController extends Controller
             }
         }
     }
-
-    public function view()
-    {
-        return view("FireTest");
-    }
 }
