@@ -13,15 +13,17 @@ class FireDisplayController extends Controller
     {
         
         $var = ProductInfo::with("product_id");//go on here
-        $fireTable = FireTableInput::orderBy("id","desc")->take(1000)->get();
+        $fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();
         $fireTime = Carbon::parse($fireTable["created_at"]);
         $fireArray = [];
 
-        $var2 = FireTableInput::where(Carbon::parse("created_at") + 2 > now())->get();
-
         foreach($fireTable as $fires)
         {
-            $fireArray[] = $fires;
+            if($fires["created_at"] > now(+2))
+            {
+                $fireArray[] = $fires;
+            }
+            
         }
 
         return view("fire-display")->with("fires", $fireArray);
