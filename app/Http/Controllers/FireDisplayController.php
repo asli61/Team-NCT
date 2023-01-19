@@ -9,7 +9,7 @@ class FireDisplayController extends Controller
 {
     public function index()
     {
-        $fireTable = FireTableInput::all();
+        $fireTable = FireTableInput::orderBy("id","desc")->take(50)->get();
         $fireArray = [];
 
         foreach($fireTable as $fires)
@@ -17,6 +17,6 @@ class FireDisplayController extends Controller
             $fireArray[] = $fires;
         }
 
-        return view("fire-display")->with($fireArray);
+        return view("fire-display")->with("fires", $fireArray);
     }
 }
