@@ -25,8 +25,9 @@ class FireDisplayController extends Controller
         {
             if($fires["created_at"] > now()->subHours(2))
             {
-                //$fireArray[] = $fires->productInfo->adress;
+                //$fireArray[] = "product_id" => $fires->productInfo->adress;
                 $fireArray[] = $fires;
+                $fireArray[] = ["product_id" => $fires->productInfo->adress];
             }     
 
             else
