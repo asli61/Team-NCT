@@ -87,8 +87,9 @@ justify-content: center;
     border-color: royalblue;
 }
 .container-misc{
-    
-    margin-bottom: 50%; 
+    margin: auto;
+    margin-bottom: 50%;
+    height: 500px;
     width: 200px;
     color: white;
 }
