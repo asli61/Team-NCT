@@ -17,6 +17,7 @@
     <form method="post">
         @csrf
         <input type = "text" name = "serial_number" placeholder = "Ürün seri numarasını giriniz" >
+        <label for="serial_number">Ürün seri numarasını giriniz</label>
         <input type = "text" name = "adress" placeholder ="Ürünün yerleştirileceği yerin açık adresi" >
         <button type = "submit">Kayıt Et</button>
      </form>
