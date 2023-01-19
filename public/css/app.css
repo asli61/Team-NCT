@@ -67,7 +67,7 @@ justify-content: center;
 }
 .links{
     text-decoration: none;
-    color: darkblue;
+    color: darkolivegreen;
     font-size: 30px;
 }
 .container-misc{
@@ -75,7 +75,6 @@ justify-content: center;
     width: 200px;
 }
 .log-out-button{
-    background-color: black;
     width: 180px;
     height: 25px;
     margin-top: 2px;
