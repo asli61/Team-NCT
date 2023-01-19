@@ -7,7 +7,9 @@
     <title>Ürün Kayıt</title>
 </head>
 <body>
-    <a href="{{route("home")}}">ana sayfa</a>
+    <div class="home-buttons">
+        <a href="{{route("home")}}">ana sayfa</a>
+    </div>
     <div>Ürün kayıt et</div> 
 
     <form method="post">
