@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\FireTableInput;
 use App\Models\ProductInfo;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class FireDisplayController extends Controller
@@ -14,6 +15,8 @@ class FireDisplayController extends Controller
         $var = ProductInfo::with("product_id");//go on here
         $fireTable = FireTableInput::orderBy("id","desc")->take(100)->get();
         $fireArray = [];
+
+        $var2 = FireTableInput::where(Carbon::parse("created_at") + 2 > now())->get();
 
         foreach($fireTable as $fires)
         {
