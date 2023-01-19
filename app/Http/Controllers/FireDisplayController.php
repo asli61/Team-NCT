@@ -10,7 +10,13 @@ class FireDisplayController extends Controller
     public function index()
     {
         $fireTable = FireTableInput::all();
+        $fireArray = [];
 
-        return view("fire-display")->with($fireTable);
+        foreach($fireTable as $fires)
+        {
+            $fireArray[] = $fires;
+        }
+
+        return view("fire-display")->with($fireArray);
     }
 }
