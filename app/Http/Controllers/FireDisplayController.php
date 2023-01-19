@@ -12,7 +12,7 @@ class FireDisplayController extends Controller
     public function index()
     {
         
-        $adress_var = FireTableInput::with("producToId")->get();//go on here
+        $adress_var = FireTableInput::all();//go on here
         foreach($adress_var as $adress)
         {
             echo $adress->producToId->adress;
