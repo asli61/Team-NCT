@@ -88,6 +88,7 @@ justify-content: center;
 }
 .container-misc{
     margin: auto;
+    margin-top: 200px;
     width: 200px;
     color: white;
 }
