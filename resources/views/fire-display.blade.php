@@ -10,7 +10,7 @@
 
 <style>
 .firecontainer div{
-    border-left: 1px solid black;
+    border-top: 1px solid black;
 }
 
 </style>
