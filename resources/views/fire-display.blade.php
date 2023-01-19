@@ -20,13 +20,13 @@
 </style>
 <div class="firecontainer">
 @php
-$adress_key = 0;
+$array_key = 0;
 @endphp
 @foreach ($fires as $fire)
 
-<div>Oluşturulma zamanı: {{$fire["created_at"]->addHours(3)}} | Adres: {{$adress[$adress_key]}} | Seri Numarası: {{}}</div>
+<div>Oluşturulma zamanı: {{$fire["created_at"]->addHours(3)}} | Adres: {{$adress[$array_key]}} | Seri Numarası: {{$serial[$array_key]}}</div>
 @php
-$adress_key += 1;
+$array_key += 1;
 @endphp
 @endforeach
 </div>

@@ -21,18 +21,20 @@ class FireDisplayController extends Controller
 
         $fireArray = [];
         $adressArray = [];
+        $serialArray = [];
 
         foreach($fireTable as $fires)
         {
             if($fires["created_at"] > now()->subHours(2))
             {
                 $fireArray[] = $fires;
-                $adressArray[] = $fires->productInfo;
+                $adressArray[] = $fires->productInfo->adress;
+                $serialArray[] = $fires->productInfo->serial_number;
             }     
 
             else
             {
-                return view("fire-display")->with(["fires" => $fireArray, "adress" => $adressArray]);
+                return view("fire-display")->with(["fires" => $fireArray, "adress" => $adressArray, "serial" => $serialArray]);
             }
         }
         //return view("fire-display")->with("fires", $fireArray);
