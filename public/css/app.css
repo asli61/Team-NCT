@@ -68,4 +68,5 @@ justify-content: center;
 }
 .container-login{
     margin: auto;
+    width: 250px;
 }
