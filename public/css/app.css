@@ -63,8 +63,8 @@ justify-content: center;
 }
 .container-login-inside
 {
-    justify-content: center;
+    /* justify-content: center; */
 }
 .container-login{
-    margin: auto;
+    margin-left: 600px;
 }
