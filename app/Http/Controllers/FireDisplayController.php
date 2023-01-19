@@ -12,7 +12,7 @@ class FireDisplayController extends Controller
     public function index()
     {
         $data= FireTableInput::select('created_at', 'serial_number')
-->join('ProductInfo', 'product_id', '=', 'id')
+->join('product_infos', 'product_id', '=', 'id')
 ->get();
         $var = [];
         $fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
@@ -31,7 +31,7 @@ class FireDisplayController extends Controller
             }
             else
             {
-            return view("fire-display")->with("fires", $var/*$fireArray*/);
+            return view("fire-display")->with("fires", $fireArray);
             }
         }
     }
