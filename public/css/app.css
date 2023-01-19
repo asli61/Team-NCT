@@ -84,4 +84,6 @@ justify-content: center;
 }
 .forgot-password{
     font-size: 20px;
+    color: black;
+    background-color: white;
 }
