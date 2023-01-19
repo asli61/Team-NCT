@@ -7,7 +7,7 @@
     <title>hakkımızda</title>
 </head>
 <body>
-<a href="">ana sayfa</a> 
+<a href="master.blade.php">ana sayfa</a> 
 
 </body>
 </html>
