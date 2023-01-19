@@ -61,13 +61,13 @@ justify-content: center;
     width: 130px;
     height: 35px;
     text-align: center;
-    border-style: solid;
-    border-width: 5px;
+    border-style: double;
+    border-width: 3px;
     border-color: royalblue;
 }
 .links{
     text-decoration: none;
-    color: brown;
+    color: black;
     font-size: 30px;
 }
 .container-misc{
