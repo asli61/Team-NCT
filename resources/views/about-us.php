@@ -7,7 +7,7 @@
     <title>hakkımızda</title>
 </head>
 <body>
-<a href="master.blade.php">ana sayfa</a> 
+<a href="https://yangin-bilgi.com/">ana sayfa</a> 
 
 </body>
 </html>
