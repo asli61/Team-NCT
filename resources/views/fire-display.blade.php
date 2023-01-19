@@ -19,9 +19,9 @@
 
 </style>
 <div class="firecontainer">
-@foreach ($fires as $fires)
+@foreach ($fires as $fire)
 
-<div>{{$fires}}</div>
+<div>{{Oluşturulma zamanı:$fire["created-at"]}}</div>
     
 @endforeach
 </div>
