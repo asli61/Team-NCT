@@ -25,6 +25,8 @@
 $product_info = $fire["product_info"];
 var_dump($fire["product_info"]);
 var_dump($product_info);
+var_dump($product_info["adress"]);
+echo($product_info["adress"]);
 @endphp
 
 <div>{{$fire}}</div>
