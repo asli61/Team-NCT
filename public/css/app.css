@@ -53,10 +53,11 @@ justify-content: center;
 }
 .home-buttons{
     background-color: gray;
-    width: 80px;
-    height: 30px;
+    width: 130px;
+    height: 35px;
     text-align: center;
 }
 .links{
     text-decoration: none;
+    font-size: 30px;
 }
