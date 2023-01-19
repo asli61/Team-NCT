@@ -87,7 +87,7 @@ justify-content: center;
     border-color: royalblue;
 }
 .container-misc{
-    margin: auto,auto,1000px,auto;
+    margin: auto,1000px,auto,auto;
     width: 200px;
     color: white;
 }
