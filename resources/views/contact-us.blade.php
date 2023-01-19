@@ -8,7 +8,7 @@
     <title>bize ulaşın</title>
 </head>
 <body>
-<a href="https://yangin-bilgi.com/">ana sayfa</a> 
+    <a href="{{route("home")}}">ana sayfa</a>
 
 </body>
 </html>
