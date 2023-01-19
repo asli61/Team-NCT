@@ -45,6 +45,8 @@ Route::post("product-register", "ProductRegister@Register");
 Route::get("admin-product-register", "ProductRegister@adminRegisterView")->name("admin-product-register");
 Route::post("admin-product-register", "ProductRegister@adminRegister");
 
+Route::get("fires", "FireDisplayController@index")->name("fire-display");
+
 Route::view('/hakkımızda', 'about-us')->name("about-us");
 Route::view('/servislerimiz', 'services')->name("services");
 Route::view('/iletişim', 'contact-us')->name("contact-us");
