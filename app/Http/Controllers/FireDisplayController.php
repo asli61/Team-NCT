@@ -23,8 +23,10 @@ class FireDisplayController extends Controller
             {
                 $fireArray[] = $fires;
             }
+            else
+            {
+                return view("fire-display")->with("fires", $fireArray);
+            }
         }
-
-        return view("fire-display")->with("fires", $fireArray);
     }
 }
