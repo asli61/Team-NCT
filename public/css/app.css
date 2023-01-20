@@ -128,4 +128,7 @@ justify-content: center;
 .fire-container-styling{
     min-width: 1080px;
     width: min-content;
+    border-width: 5px;
+    border-color: red;
+    border-style: dashed;
 }
