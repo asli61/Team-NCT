@@ -116,7 +116,9 @@ justify-content: center;
 .time-styling{
     min-width: 1100px;
     width: min-content;
-    border-top-width: 5px;
+    border-top-width: 15px;
+    border-top-color: black;
+
 }
 .adress-styling{
     min-width: 1100px;
