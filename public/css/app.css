@@ -60,19 +60,18 @@ justify-content: center;
     font-family: Arial, Helvetica, sans-serif; 
     font-style: normal;
 
-    margin: 3px;
     background-color: burlywood;
     width: 140px;
     height: 35px;
     text-align: center;
     border-style: solid;
-    border-width: 3px;
+    border-width: 4px;
     border-color: royalblue;
 }
 .links:hover{
     font-style: oblique;
-    
-    margin: 0px;
+    width: 136px;
+    height: 31px;
     border-style: groove;
     border-width: 6px;
 }
