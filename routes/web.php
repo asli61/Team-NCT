@@ -50,3 +50,4 @@ Route::get("fires", "FireDisplayController@index")->name("fire-display");
 Route::view('/hakkımızda', 'about-us')->name("about-us");
 Route::view('/servislerimiz', 'services')->name("services");
 Route::view('/iletişim', 'contact-us')->name("contact-us");
+Route::view('/yanginlar', 'fires-display-view')->name("fires-display-view");
