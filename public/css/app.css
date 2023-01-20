@@ -126,5 +126,6 @@ justify-content: center;
     width: min-content;
 }
 .fire-container-styling{
-    width: 1080px;
+    min-width: 1080px;
+    width: min-content;
 }
