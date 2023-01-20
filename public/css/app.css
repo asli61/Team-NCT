@@ -104,10 +104,14 @@ justify-content: center;
     height: 25px;
     width: 182px;
     border-width: 3px;
-    border-style: groove;
+    border-style: dotted;
     border-color: dodgerblue;
     text-align: center;
     text-decoration: none;
+}
+.forgot-password:hover{
+    font-style: oblique;
+    border-style: groove;
 }
 .title-product-register{
     font-size: 35px;
