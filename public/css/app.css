@@ -116,14 +116,17 @@ justify-content: center;
 .time-styling{
     min-width: 1080px;
     width: min-content;
+    border-color: red;
 }
 .adress-styling{
     min-width: 1080px;
     width: min-content;
+    border-color: blueviolet;
 }
 .serial-styling{
     min-width: 1080px;
     width: min-content;
+    border-color: chartreuse;
 }
 .fire-container-styling{
     min-width: 1080px;
