@@ -14,9 +14,9 @@
 </head>
 <body>
     <div class = "navbar" id="navbar">
-        <a class= "navbar-link" href="{{route('home')}}">Yangın Bilgilendirme</a>
-        <a class= "navbar-link" href="{{route('home')}}">template</a>
-        <a class="navbar-link" href="{{route(fire-display)}}">yangınlar</a>
+        <a class= "navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
+        <a class= "navbar-link" href="{{route("home")}}">template</a>
+        <a class="navbar-link" href="{{route("fire-display")}}">yangınlar</a>
 
         @guest
         <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
