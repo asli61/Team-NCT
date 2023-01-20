@@ -57,6 +57,7 @@ justify-content: center;
     text-decoration: none;
     color: black;
     font-size: 30px;
+    font-style: normal;
 
     margin: 3px;
     background-color: burlywood;
@@ -68,20 +69,11 @@ justify-content: center;
     border-color: royalblue;
 }
 .links:hover{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    font-style: italic;
+    font-style: oblique;
     
     margin: 0px;
-    background-color: burlywood;
-    width: 130px;
-    height: 35px;
-    text-align: center;
     border-style: groove;
     border-width: 6px;
-    border-color: royalblue;
 }
 .container-misc{
     margin: auto;
