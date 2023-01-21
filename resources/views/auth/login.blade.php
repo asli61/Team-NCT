@@ -54,7 +54,7 @@
     </div>
 </div>
 
-        @error("password")
+        @error("email")
         <strong>{{ $message }}</strong>
         @enderror
 
