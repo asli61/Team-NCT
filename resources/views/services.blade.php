@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
-    <title>sağladığımız servisler</title>
+    <title>Sağladığımız servisler</title>
 </head>
 <body>
     <div class="home-buttons">
-        <a class="links" href="{{route("home")}}">ana sayfa</a>
+        <a class="links" href="{{route("home")}}">Ana sayfa</a>
     </div>
 </body>
 </html>
