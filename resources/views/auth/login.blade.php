@@ -53,11 +53,11 @@
     </form>
     </div>
 </div>
-
-        @error("email")
-        <strong>{{ $message }}</strong>
-        @enderror
-
+        <div class=" error-styling">
+            @error("email")
+            <strong>{{ $message }}</strong>
+            @enderror
+        </div>
 </body>
 </html>
 

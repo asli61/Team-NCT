@@ -129,3 +129,8 @@ justify-content: center;
     min-width: 1080px;
     width: min-content;
 }
+.error-styling{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
