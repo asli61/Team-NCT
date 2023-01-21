@@ -53,6 +53,12 @@
     </form>
     </div>
 </div>
+@if (session()->get("error"))
+    
+{{session()->get("flash")}}
+    
+@endif
+<strong>{{ $message }}</strong>
 </body>
 </html>
 
