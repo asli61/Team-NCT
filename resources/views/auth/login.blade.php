@@ -22,9 +22,6 @@
                 <input id="email" type="email" name="email" required autocomplete="email">
             </div>
         </div>
-        @error("email")
-        <strong>{{ $message }}</strong>
-        @enderror
     
         <div class="password-styling">
             <label for="password">{{ __('parola') }}</label>
@@ -32,9 +29,6 @@
                 <input id="password" type="password"  name="password" required autocomplete="current-password">
             </div>
         </div>
-        @error("password")
-        <strong>{{ $message }}</strong>
-        @enderror
     
         <div class="remember-styling">
             <input id="remember" type="checkbox" name="remember"  {{ old('remember') ? 'checked' : '' }}>
@@ -59,6 +53,11 @@
     </form>
     </div>
 </div>
+
+        @error("password")
+        <strong>{{ $message }}</strong>
+        @enderror
+
 </body>
 </html>
 
