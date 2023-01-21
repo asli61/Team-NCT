@@ -39,9 +39,11 @@ class LoginController extends Controller
             return redirect(route("home.route"));
             }
         }
-        return redirect(route("login.route"))->withInput()
-        ->with(["error" => true , "flash" => "Either email or password is wrong"]);
-    
+        /*return redirect(route("login.route"))->withInput()
+        ->with(["error" => true , "flash" => "Either email or password is wrong"]);*/
+        
+        return redirect(route("login.route"))->with(["error" => true ,
+             "flash" => "Seri numarası zaten var veya seri numarası girilmemiş"]);
 
         /*if((!empty($request["email"])) & (!empty($request["password"])))
     {      
