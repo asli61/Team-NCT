@@ -55,7 +55,7 @@
 </div>
         <div class=" error-styling">
             @error("email")
-            <strong>{{ $message }}</strong>
+            <div>{{ $message }}</div>
             @enderror
         </div>
 </body>
