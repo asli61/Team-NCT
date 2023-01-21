@@ -15,7 +15,7 @@
 <body>
     <div class = "navbar" id="navbar">
         <a class= "navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
-        <a class="navbar-link" href="{{route("fire-display")}}">yangınlar</a>
+        <a class="navbar-link" href="{{route("fire-display")}}">Yangınlar</a>
 
         @guest
         <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
@@ -45,7 +45,7 @@
             <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
             @endauth
             <a class= "navbar-link" href="{{route('home')}}">Yangın Bilgilendirme</a>
-            <a class="navbar-link" href="{{route("fire-display")}}">yangınlar</a>
+            <a class="navbar-link" href="{{route("fire-display")}}">Yangınlar</a>
             @guest
                 <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
                 <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
