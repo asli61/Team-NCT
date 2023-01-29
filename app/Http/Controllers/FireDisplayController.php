@@ -19,7 +19,7 @@ class FireDisplayController extends Controller
 
         $request = request()->all();
 
-        if(empty($request["city"]))
+        if(($request["city"]) == 0)
         {
             redirect(route("home"));
         }
