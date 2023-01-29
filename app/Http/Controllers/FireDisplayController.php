@@ -24,7 +24,7 @@ class FireDisplayController extends Controller
             redirect()->back();
         }
 
-        $fireTable = FireTableInput::with("productInfo")->whereIn("city" , $request["city"])->orderBy("created_at","desc")->take(1000)->get();
+        $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
         $adressArray = [];
@@ -32,7 +32,7 @@ class FireDisplayController extends Controller
 
         foreach($fireTable as $fires)
         {
-            if($fires["created_at"] > now()->subHours(48))
+            if(($fires["created_at"] > now()->subHours(48))&($fireTable->productInfo->city == $request["city"]))
             {
                 $fireArray[] = $fires;
                 $adressArray[] = $fires->productInfo->adress;
