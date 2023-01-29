@@ -16,12 +16,8 @@
     <div class = "navbar" id="navbar">
         <a class= "navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
         <a class="navbar-link" href="{{route("fire-display")}}">Yangınlar</a>
-        
         <form method = "post" action="{{route('fire-display')}}">
             @csrf
-            <div class="log-out-button">
-                <button class = "navbar-link auth-link" type = "submit">Yangınlar</button>
-            </div>
             <select name="city">
                 <option value="">Şehir seçiniz</option>
                 <option value="34">İstanbul</option>
@@ -106,6 +102,9 @@
                 <option value="66">Yozgat</option>
                 <option value="67">Zonguldak</option>
             </select>
+            <div class="log-out-button">
+                <button class = "navbar-link auth-link" type = "submit">Yangınlar</button>
+            </div>
         </form>
 
         @guest
