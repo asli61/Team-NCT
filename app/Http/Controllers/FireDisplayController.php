@@ -32,11 +32,14 @@ class FireDisplayController extends Controller
 
         foreach($fireTable as $fires)
         {
-            if(($fires["created_at"] > now()->subHours(48))&($fires->productInfo->city == $request["city"]))
+            if($fires["created_at"] > now()->subHours(48))
             {
-                $fireArray[] = $fires;
-                $adressArray[] = $fires->productInfo->adress;
-                $serialArray[] = $fires->productInfo->serial_number;
+                if($fires->productInfo->city == $request["city"])
+                {
+                    $fireArray[] = $fires;
+                    $adressArray[] = $fires->productInfo->adress;
+                    $serialArray[] = $fires->productInfo->serial_number;
+                }
             }     
 
             else
