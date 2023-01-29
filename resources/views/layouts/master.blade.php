@@ -19,7 +19,7 @@
         <form method = "post" action="{{route('fire-display')}}">
             @csrf
             <select name="city">
-                <option value="0">Şehir seçiniz</option>
+                <option value="">Şehir seçiniz</option>
                 <option value="34">İstanbul</option>
                 <option value="6">Ankara</option>
                 <option value="35">İzmir</option>
