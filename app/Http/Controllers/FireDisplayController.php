@@ -19,6 +19,11 @@ class FireDisplayController extends Controller
 
         $request = request()->all();
 
+        if(empty($request["city"]))
+        {
+            redirect()->back();
+        }
+
         $fireTable = FireTableInput::with("productInfo")->where("city" , $request["city"])->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
