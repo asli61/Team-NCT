@@ -56,32 +56,24 @@ justify-content: center;
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: normal;
 
-    margin: 3px;
     background-color: burlywood;
-    width: 130px;
+    width: 140px;
     height: 35px;
     text-align: center;
     border-style: solid;
-    border-width: 3px;
+    border-width: 4px;
     border-color: royalblue;
 }
 .links:hover{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    font-style: italic;
-    
-    margin: 0px;
-    background-color: burlywood;
-    width: 130px;
-    height: 35px;
-    text-align: center;
+    font-style: oblique;
+    width: 136px;
+    height: 31px;
     border-style: groove;
     border-width: 6px;
-    border-color: royalblue;
 }
 .container-misc{
     margin: auto;
@@ -101,15 +93,44 @@ justify-content: center;
     font-family: Arial, Helvetica, sans-serif; 
     color: white;
     background-color: black;
-    height: 25px;
+    height: 26px;
     width: 182px;
     border-width: 3px;
-    border-style: groove;
+    border-style: solid;
     border-color: dodgerblue;
     text-align: center;
     text-decoration: none;
 }
+.forgot-password:hover{
+    font-style: oblique;
+    border-style: groove;
+    height: 22px;
+    width: 178px;
+    border-width: 5px;
+
+}
 .title-product-register{
     font-size: 35px;
     margin-bottom: 20px;
+}
+.time-styling{
+    min-width: 1080px;
+    width: min-content;
+}
+.adress-styling{
+    min-width: 1080px;
+    width: min-content;
+}
+.serial-styling{
+    min-width: 1080px;
+    width: min-content;
+}
+.fire-container-styling{
+    min-width: 1080px;
+    width: min-content;
+}
+.error-styling{
+    width: 500px;
+    margin: auto;
+    text-align: center;
 }

@@ -24,7 +24,11 @@ $array_key = 0;
 @endphp
 @foreach ($fires as $fire)
 
-<div>Oluşturulma zamanı: {{$fire["created_at"]->addHours(3)}} | Adres: {{$adress[$array_key]}} | Seri Numarası: {{$serial[$array_key]}}</div>
+<div class="fire-container-styling">
+     <div class="time-styling"> Oluşturulma zamanı: {{$fire["created_at"]->addHours(3)}} </div> 
+     <div class="adress-styling"> Adres: {{$adress[$array_key]}} </div> 
+     <div class="serial-styling"> Seri Numarası: {{$serial[$array_key]}} </div> 
+</div>
 @php
 $array_key += 1;
 @endphp

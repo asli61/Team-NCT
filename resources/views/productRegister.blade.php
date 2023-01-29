@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="home-buttons">
-        <a class="links" href="{{route("home")}}">ana sayfa</a>
+        <a class="links" href="{{route("home")}}">Ana sayfa</a>
     </div>
     <div class="container-misc">
     <div class="title-product-register">Ürün kaydı</div> 

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="home-buttons">
-        <a class="links" href="{{route("home")}}">ana sayfa</a>
+        <a class="links" href="{{route("home")}}">Ana sayfa</a>
     </div>
 
 <div class="container-misc">
@@ -53,6 +53,11 @@
     </form>
     </div>
 </div>
+        <div class=" error-styling">
+            @error("email")
+            <strong>{{ $message }}</strong>
+            @enderror
+        </div>
 </body>
 </html>
 
