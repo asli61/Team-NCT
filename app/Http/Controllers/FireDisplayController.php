@@ -24,7 +24,7 @@ class FireDisplayController extends Controller
             redirect()->back();
         }
 
-        $fireTable = FireTableInput::with("productInfo")->where("city" , $request["city"])->orderBy("created_at","desc")->take(1000)->get();
+        $fireTable = FireTableInput::with("productInfo")->whereIn("city" , $request["city"])->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
         $adressArray = [];
