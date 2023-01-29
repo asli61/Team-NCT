@@ -105,6 +105,7 @@
             <div class="log-out-button">
                 <button class = "navbar-link auth-link" type = "submit">Yangınlar</button>
             </div>
+            <button class = "navbar-link auth-link" type = "submit">Yangınlar</button>
         </form>
 
         @guest
