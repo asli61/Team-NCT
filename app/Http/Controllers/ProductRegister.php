@@ -25,10 +25,11 @@ class ProductRegister extends Controller
             "adress" => "required"
         ]);
         
-        if(!($validator->fails()))
+        if((!$validator->fails())&(!empty($request["city"])))
         {
             ProductInfo::where(["serial_number" => $request["serial_number"]])
-                ->update(["adress" => $request["adress"]
+                ->update(["adress" => $request["adress"],
+                        "city" => $request["city"]
                 ]);
                 return redirect(route("product-register"))->with(["error" => true ,
              "flash" => "Ürün kaydı başarılı"]);
@@ -37,7 +38,7 @@ class ProductRegister extends Controller
         else
         {
             return redirect(route("product-register"))->with(["error" => true ,
-             "flash" => "Seri numarası yok veya adres girilmemiş"]);
+             "flash" => "Seri numarası yok veya adres eksik"]);
         }
     }
 

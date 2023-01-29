@@ -12,5 +12,6 @@ class ProductInfo extends Model
     protected $fillable = [
         'serial_number',
         'adress',
+        'city',
     ];
 }
