@@ -21,7 +21,7 @@ class FireDisplayController extends Controller
 
         if(empty($request["city"]))
         {
-            redirect()->back();
+            redirect(route("home"));
         }
 
         $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
