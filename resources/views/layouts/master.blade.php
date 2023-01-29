@@ -16,7 +16,7 @@
     <div class = "navbar" id="navbar">
         <a class= "navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
         <a class="navbar-link" href="{{route("fire-display")}}">Yangınlar</a>
-        <form method = "get" action="{{route('fire-display')}}">
+        <form method = "post" action="{{route('fire-display')}}">
             @csrf
             <select name="city">
                 <option value="">Şehir seçiniz</option>
