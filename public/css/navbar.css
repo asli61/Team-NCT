@@ -26,6 +26,10 @@
   background-color: rgb(117, 117, 117);
 }
 
+#fire-navbar-links:hover{
+  background-color: #ddd;
+}
+
 /* Change the link color to #111 (black) on hover */
 .navbar .navbar-link:hover {
   background-color: #ddd;
