@@ -22,6 +22,10 @@
   border-width: 0px;
 }
 
+.fire-navbar-links{
+  background-color: aqua;
+}
+
 /* Change the link color to #111 (black) on hover */
 .navbar .navbar-link:hover {
   background-color: #ddd;

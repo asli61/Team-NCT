@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class = "navbar" id="navbar">
-        <a class= "navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
+        <a class= "fire-navbar-links navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
         <form method = "post" action="{{route('fire-display')}}">
             @csrf
             <button class = "navbar-link" type = "submit">Yangınlar</button>
