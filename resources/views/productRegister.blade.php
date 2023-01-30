@@ -18,6 +18,7 @@
         @csrf
         <label for="serial_number">Ürün seri numarasını giriniz</label>
         <input type = "text" name = "serial_number" placeholder = "Ürün seri numarasını giriniz" >
+        <label for="city">ürünün yerleştirileceği şehir</label>
         <select name="city">
             <option value="">Ürünün yerleştirileceği şehir</option>
             <option value="34">İstanbul</option>
