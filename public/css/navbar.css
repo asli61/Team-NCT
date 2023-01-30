@@ -24,10 +24,12 @@
 
 #fire-navbar-links{
   background-color: rgb(117, 117, 117);
+  outline: none;
 }
 
 #fire-navbar-links:hover{
   background-color: #ddd;
+  outline: none;
 }
 
 /* Change the link color to #111 (black) on hover */
