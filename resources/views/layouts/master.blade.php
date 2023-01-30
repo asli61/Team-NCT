@@ -18,7 +18,7 @@
         <form method = "post" action="{{route('fire-display')}}">
             @csrf
             <button id="fire-navbar-links" class = "navbar-link" type = "submit">Yangınlar</button>
-            <select class="navbar-link" name="city">
+            <select id="fire-navbar-links" class="navbar-link" name="city">
                 <option value="">Şehir seçiniz</option>
                 <option value="34">İstanbul</option>
                 <option value="6">Ankara</option>
