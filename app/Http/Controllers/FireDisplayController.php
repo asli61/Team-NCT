@@ -48,6 +48,6 @@ class FireDisplayController extends Controller
             }
         }
         //return view("fire-display")->with("fires", $fireArray);
-        return redirect("catch");
+        return view("fire-display")->with(["fires" => $fireArray, "adress" => $adressArray, "serial" => $serialArray]);
     }
 }
