@@ -19,6 +19,7 @@
   text-decoration: none;
   font-size: 19px;
   box-sizing: border-box;
+  border-width: 0px;
 }
 
 /* Change the link color to #111 (black) on hover */
