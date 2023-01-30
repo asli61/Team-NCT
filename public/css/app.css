@@ -113,6 +113,9 @@ justify-content: center;
     font-size: 35px;
     margin-bottom: 20px;
 }
+.label-product-register{
+    margin-top: 10px;
+}
 .time-styling{
     min-width: 1080px;
     width: min-content;

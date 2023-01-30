@@ -16,9 +16,9 @@
 
     <form method="post">
         @csrf
-        <label for="serial_number">Ürün seri numarasını giriniz</label>
+        <label class="label-product-register" for="serial_number">Ürün seri numarasını giriniz</label>
         <input type = "text" name = "serial_number" placeholder = "Ürün seri numarasını giriniz" >
-        <label for="city">ürünün yerleştirileceği şehir</label>
+        <label class="label-product-register" for="city">ürünün yerleştirileceği şehir</label>
         <select name="city">
             <option value="">Ürünün yerleştirileceği şehir</option>
             <option value="34">İstanbul</option>
@@ -103,7 +103,7 @@
             <option value="66">Yozgat</option>
             <option value="67">Zonguldak</option>
         </select>
-        <label for="adress">Ürünün yerleştirileceği yerin açık adresi</label>
+        <label class="label-product-register" for="adress">Ürünün yerleştirileceği yerin açık adresi</label>
         <input type = "text" name = "adress" placeholder ="Ürünün yerleştirileceği yerin açık adresi" >
         <button type = "submit">Kayıt Et</button>
      </form>
