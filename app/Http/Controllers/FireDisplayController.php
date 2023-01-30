@@ -17,6 +17,13 @@ class FireDisplayController extends Controller
 ->get();*/
         //$fireTable = FireTableInput::orderBy("created_at","desc")->take(1000)->get();//go on here
 
+        $request = request()->all();
+
+        if(empty($request["city"]))
+        {
+            return redirect(route("home"));
+        }
+
         $fireTable = FireTableInput::with("productInfo")->orderBy("created_at","desc")->take(1000)->get();
 
         $fireArray = [];
@@ -27,9 +34,12 @@ class FireDisplayController extends Controller
         {
             if($fires["created_at"] > now()->subHours(48))
             {
-                $fireArray[] = $fires;
-                $adressArray[] = $fires->productInfo->adress;
-                $serialArray[] = $fires->productInfo->serial_number;
+                if($fires->productInfo->city == $request["city"])
+                {
+                    $fireArray[] = $fires;
+                    $adressArray[] = $fires->productInfo->adress;
+                    $serialArray[] = $fires->productInfo->serial_number;
+                }
             }     
 
             else
@@ -37,6 +47,6 @@ class FireDisplayController extends Controller
                 return view("fire-display")->with(["fires" => $fireArray, "adress" => $adressArray, "serial" => $serialArray]);
             }
         }
-        //return view("fire-display")->with("fires", $fireArray);
+        return view("fire-display")->with(["fires" => $fireArray, "adress" => $adressArray, "serial" => $serialArray]);
     }
 }

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->index("id");
             $table->string("serial_number")->unique();
             $table->string("adress")->nullable();
+            $table->unsignedTinyInteger("city")->nullable();
             $table->timestamps();
         });
     }
