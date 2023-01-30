@@ -136,4 +136,5 @@ justify-content: center;
 }
 .city-selection{
     border-color: green;
+    border-width: 10px;
 }
