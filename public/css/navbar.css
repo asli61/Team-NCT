@@ -19,6 +19,16 @@
   text-decoration: none;
   font-size: 19px;
   box-sizing: border-box;
+  border-width: 0px;
+}
+
+#fire-navbar-links{
+  background-color: rgb(117, 117, 117);
+  outline: none;
+}
+
+#fire-navbar-links:hover{
+  background-color: #ddd;
 }
 
 /* Change the link color to #111 (black) on hover */

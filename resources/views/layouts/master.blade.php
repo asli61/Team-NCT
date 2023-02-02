@@ -15,11 +15,10 @@
 <body>
     <div class = "navbar" id="navbar">
         <a class= "navbar-link" href="{{route("home")}}">Yangın Bilgilendirme</a>
-        <a class="navbar-link" href="{{route("fire-display")}}">Yangınlar</a>
         <form method = "post" action="{{route('fire-display')}}">
             @csrf
-            <button class = "navbar-link" type = "submit">Yangınlar</button>
-            <select class="navbar-link" name="city">
+            <button id="fire-navbar-links" class = "navbar-link" type = "submit">Yangınlar</button>
+            <select id="fire-navbar-links" class="navbar-link" name="city">
                 <option value="">Şehir seçiniz</option>
                 <option value="34">İstanbul</option>
                 <option value="6">Ankara</option>
@@ -124,12 +123,6 @@
         <button class="openbtn" onclick="openNav()">☰</button>  
         <div id ="dashboard-content">
             @auth
-            <form method = "post" action="{{route('logout')}}">
-            @csrf
-            <div class="log-out-button">
-                <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
-            </div>
-            </form>
             <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
             @endauth
             <a class= "navbar-link" href="{{route('home')}}">Yangın Bilgilendirme</a>
@@ -138,15 +131,6 @@
                 <a href="{{route('login')}}" class="navbar-link auth-link">Yönetici Giriş</a>
                 <a href="{{route('product-register')}}" class="navbar-link auth-link">Ürününüzü kayıt edin</a>
             @endguest
-           <!-- @auth
-            <form method = "post" action="{{route('logout')}}">
-            @csrf
-            <div class="log-out-button">
-                <button class = "navbar-link auth-link" type = "submit">Çıkış yap</button>
-            </div>
-            </form>
-            <a class="navbar-link auth-link" href="{{route("admin-product-register")}}">Yönetici Ürün Ekleme</a>
-            @endauth-->
             <a href="{{route("about-us")}}">Hakkımızda</a>
             <a href="{{route("services")}}">Sağladığımız servisler</a>
             <a href="{{route("contact-us")}}">Bize ulaşın</a> 
